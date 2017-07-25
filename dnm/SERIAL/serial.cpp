@@ -42,16 +42,9 @@ void create_children(vector<string>& urls)
 		/* The child code */
 		if(pid == 0)
 		{	
-			
-	
-			
-			/* Deploy wget */
-			if(execlp("/usr/bin/wget", "wget", urlIt->c_str(), NULL) < 0)
-			{
-				perror("execlp");
-				
-			}
-				
+		/* Deploy wget */
+		execlp("/usr/bin/wget", "wget", urlIt->c_str(), NULL)
+
 		}
 		else
 		{
