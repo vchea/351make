@@ -10,11 +10,12 @@ Group Members:
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdio.h>
-#include <stdlib.h>
+#include <cstdlib>
 #include <sys/wait.h>
 #include <fstream>
 #include <vector>
 #include <iostream>
+#include <string>
 using namespace std;
 
 /**
