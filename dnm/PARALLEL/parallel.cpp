@@ -53,7 +53,7 @@ void create_children(vector<string>& urls)
 			if(execlp("/usr/bin/wget", "wget", urlIt->c_str(), NULL) < 0)
 			{
 				perror("execlp");
-				exit(1);
+				exit(0);
 			}
 				
 		}
@@ -87,7 +87,7 @@ void readUrls(vector<string>& urls)
 	if(!urlFile.is_open())
 	{
 		fprintf(stderr, "Failed to open the file");
-		exit(1);
+		exit(0);
 	}
 	
 	/* Read the entire file */
